@@ -1,0 +1,32 @@
+// Pengujian API
+GET http://localhost:5000/users
+
+###
+// GET Data by ID
+GET http://localhost:5000/users/6494a6e2d69cca9ec86c312c
+
+###
+// POST Data
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Broto",
+    "email": "broto@gmail.com",
+    "gender": "Male"
+}
+
+###
+// PATCH Data
+PATCH http://localhost:5000/users/6494a6e2d69cca9ec86c312c
+Content-Type: application/json
+
+{
+    "name": "Muhammad Sofi",
+    "email": "muhammadsofi@gmail.com",
+    "gender": "Male"
+}
+
+###
+// DELETE Data
+DELETE http://localhost:5000/users/6494a6e2d69cca9ec86c312c
